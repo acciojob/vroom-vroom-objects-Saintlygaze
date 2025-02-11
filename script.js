@@ -12,9 +12,12 @@ Car.prototype.getMakeModel()
 	return `${this.make} ${this.model}`
 }
 
-class SportsCar extends Car(make, model, topSpeed) {
+class SportsCar extends Car {
+	constructor(make,model,topspeed){
 	super(make,model);
 	this.topSpeed = topSpeed;
+	}
+	
 }
 
 Car.prototype.getTopSpeed()
