@@ -2,7 +2,7 @@
 class Car {
 	constructor(make,model){
 		this.make = make;
-	this.model =model;
+		this.model =model;
 	}
 	
 }
@@ -20,12 +20,12 @@ class SportsCar extends Car {
 	
 }
 
-Car.prototype.getTopSpeed=function()
+SportsCar.prototype.getTopSpeed=function()
 {
 	return this.topSpeed;
 }
 
-Sportscar.prototype= Object.create(Car.prototype);
+
 // Do not change the code below
 window.Car = Car;
 window.SportsCar = SportsCar;
