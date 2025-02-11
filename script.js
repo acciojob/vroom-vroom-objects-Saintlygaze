@@ -7,9 +7,9 @@ class Car {
 	
 }
 
-Car.prototype.getMakeModel=function()
+Car.prototype.getMakeModel = function()
 {
-	return `${this.make} ${this.model}`
+	return `${this.make} ${this.model}`;
 }
 
 class SportsCar extends Car {
@@ -20,7 +20,7 @@ class SportsCar extends Car {
 	
 }
 
-SportsCar.prototype.getTopSpeed=function()
+SportsCar.prototype.getTopSpeed = function()
 {
 	return this.topSpeed;
 }
